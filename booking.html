@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Tickets - Hudhuria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="nav-left">
+    <a href="index.html" class="nav-link active">Events</a>
+    <a href="organizers.html" class="nav-link">Organizers</a>
+    <a href="venues.html" class="nav-link">Venues</a>
+  </div>
+  <a href="index.html" class="logo">Hudhuria</a>
+  <div class="nav-right">
+    <a href="signup.html" class="signup-btn">Sign Up</a>
+    <a href="login.html" class="login-btn">Login</a>
+  </div>
+</nav>
+
+<div class="login-wrapper">
+  <div class="login-card" style="max-width: 500px;">
+    <h2 class="login-title">Book Tickets</h2>
+    <p class="login-subtitle">Techies Meetup - APR 12</p>
+    
+    <form class="login-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" class="form-input" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" class="form-input" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="tickets">Number of Tickets</label>
+        <select id="tickets" class="form-input">
+          <option value="1">1 Ticket</option>
+          <option value="2">2 Tickets</option>
+          <option value="3">3 Tickets</option>
+          <option value="4">4 Tickets</option>
+          <option value="5">5 Tickets</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="payment">Payment Method</label>
+        <select id="payment" class="form-input">
+          <option value="card">Credit/Debit Card</option>
+          <option value="mpesa">M-Pesa</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </div>
+      
+      <button type="submit" class="form-btn">Confirm Booking</button>
+      
+      <div class="form-footer">
+        <p><a href="event-details.html">Cancel</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About Hudhuria</h4>
+      <p>Your one-stop platform for discovering and booking tickets for the most exciting events happening around you.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <a href="index.html">Events</a><br>
+      <a href="organizers.html">Organizers</a><br>
+      <a href="venues.html">Venues</a><br>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Hudhuria. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

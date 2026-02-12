@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="splash-screen" id="splash">
+  <h1 class="splash-logo">Hudhuria</h1>
+</div>
+
+<nav class="top-nav">
+  <div class="nav-left">
+    <a href="index.html" class="nav-link active">Events</a>
+    <a href="organizers.html" class="nav-link">Organizers</a>
+    <a href="venues.html" class="nav-link">Venues</a>
+  </div>
+  <a href="index.html" class="logo">Hudhuria</a>
+  <div class="nav-right">
+    <a href="signup.html" class="signup-btn">Sign Up</a>
+    <a href="login.html" class="login-btn">Login</a>
+  </div>
+</nav>
+
+<section class="events-section">
+  <h3 class="section-title">Upcoming Events</h3>
+
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search for events...">
+  </div>
+
+  <div class="events-grid">
+
+
+    <!-- EVENT CARD -->
+    <a href="event-details.html" class="ticket-card" aria-label="View details for Techies Meetup">
+      <div class="ticket-inner">
+        <img src="./images-events-1.jpg" class="ticket-image" alt="Event">
+
+        <div class="ticket-content">
+          <span class="event-date">APR 12 • 6:00 PM</span>
+          <h4 class="event-title">Techies Meetup</h4>
+          <p class="event-venue">Main Auditorium</p>
+
+          <span class="event-price paid">FREE</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- FREE EVENT -->
+    <a href="event-details.html" class="ticket-card" aria-label="View details for Culture Night">
+      <div class="ticket-inner">
+        <img src="./images-events-1.jpg" class="ticket-image" alt="Event">
+
+        <div class="ticket-content">
+          <span class="event-date">APR 18 • 4:00 PM</span>
+          <h4 class="event-title">Culture Night</h4>
+          <p class="event-venue">Parking lot B</p>
+
+          <span class="event-price free">sh.1,500</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- EVENT CARD 3 -->
+    <a href="event-details.html" class="ticket-card" aria-label="View details for Music Festival">
+      <div class="ticket-inner">
+        <img src="./images-events-1.jpg" class="ticket-image" alt="Abstract coding image">
+
+        <div class="ticket-content">
+          <span class="event-date">MAY 01 • 12:00 PM</span>
+          <h4 class="event-title">Music Festival</h4>
+          <p class="event-venue">City Park</p>
+
+          <span class="event-price free">sh.2,500</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- EVENT CARD 4 -->
+    <a href="event-details.html" class="ticket-card" aria-label="View details for Art Exhibition">
+      <div class="ticket-inner">
+        <img src="./images-events-1.jpg" class="ticket-image" alt="Abstract coding image">
+
+        <div class="ticket-content">
+          <span class="event-date">MAY 05 • 10:00 AM</span>
+          <h4 class="event-title">Art Exhibition</h4>
+          <p class="event-venue">Grand Gallery</p>
+
+          <span class="event-price paid">FREE</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About Hudhuria</h4>
+      <p>Your one-stop platform for discovering and booking tickets for the most exciting events happening around you.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <a href="index.html">Events</a><br>
+      <a href="organizers.html">Organizers</a><br>
+      <a href="venues.html">Venues</a><br>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a><br>
+      <a href="#">Twitter</a><br>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Hudhuria. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Wait 3 seconds, then add the 'hidden' class to fade out the splash screen
+  setTimeout(function() {
+    document.getElementById('splash').classList.add('hidden');
+  }, 3000);
+</script>
+
+</body>
+</html>

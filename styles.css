@@ -1,0 +1,438 @@
+/* CSS VARIABLES */
+:root {
+  --dark-blue: #0d1b2a;
+  --dark-blue-hover: #1b2f45;
+  --accent-light-blue: #4cc9f0;
+  --accent-light-blue-darker: #4895ef;
+  --text-light: #f1f1f1;
+  --text-dark: #333;
+  --background-light: #f0f8ff;
+  --background-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: var(--background-light);
+}
+
+/* NAV */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: var(--background-white);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--accent-light-blue);
+}
+
+.nav-link.active {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.logo {
+  text-align: center;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.signup-btn {
+  text-decoration: none;
+  background: transparent;
+  color: var(--dark-blue);
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid var(--dark-blue);
+  transition: all 0.2s;
+  margin-right: 12px;
+}
+
+.signup-btn:hover {
+  background: var(--dark-blue);
+  color: var(--background-white);
+}
+
+.login-btn {
+  text-decoration: none;
+  background: var(--dark-blue);
+  color: var(--background-white);
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: var(--dark-blue-hover);
+}
+
+/* SPLASH SCREEN */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark-blue);
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.splash-logo {
+  color: var(--background-white);
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.splash-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* SECTIONS */
+.section-title {
+  padding: 16px;
+  font-size: 20px;
+}
+
+/* SEARCH BAR */
+.search-container {
+    padding: 0 24px 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 14px 20px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* SWIPEABLE EVENTS */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.ticket-card {
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* TICKET CARD */
+.ticket-inner {
+  background: var(--background-white);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.ticket-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.ticket-content {
+  padding: 14px;
+}
+
+.event-date {
+  font-size: 12px;
+  color: #777;
+}
+
+.event-title {
+  margin: 6px 0;
+}
+
+.event-venue {
+  font-size: 14px;
+  color: #555;
+}
+
+/* PRICE TAG */
+.event-price {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.event-price.free {
+  background: #e0f7fa;
+  color: #0288d1;
+}
+
+.event-price.paid {
+  background: #eef2f7;
+  color: var(--dark-blue);
+}
+
+/* DASHBOARD CARDS */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.simple-card {
+  background: var(--background-white);
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* LOGIN PAGE */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.login-card {
+  background: var(--background-white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 24px;
+  color: var(--dark-blue);
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--dark-blue);
+}
+
+.form-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--dark-blue);
+  color: var(--background-white);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+
+.form-btn:hover {
+  background: var(--dark-blue-hover);
+}
+
+.form-footer {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #666;
+}
+
+.form-footer a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* EVENT DETAILS PAGE */
+.details-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.details-container {
+  padding: 24px;
+  background: var(--background-white);
+  position: relative;
+  top: -20px;
+  border-radius: 24px 24px 0 0;
+  min-height: 500px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+}
+
+.details-title {
+  font-size: 28px;
+  color: var(--dark-blue);
+  margin: 8px 0 16px;
+}
+
+.details-info {
+  display: flex;
+  gap: 16px;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.details-description {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 32px;
+  font-size: 15px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #666;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--dark-blue);
+}
+
+/* ACCESSIBILITY */
+a:focus-visible, button:focus-visible, input:focus-visible, .ticket-card:focus-visible {
+  outline: 3px solid var(--accent-light-blue);
+  outline-offset: 2px;
+  border-radius: 4px; /* Add a slight radius to the outline */
+}
+
+/* Override for elements with custom focus */
+.form-input:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.4);
+}
+
+/* FOOTER */
+.site-footer {
+    background: var(--dark-blue);
+    color: var(--text-light);
+    padding: 40px 24px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    color: var(--accent-light-blue);
+}
+
+.footer-column p, .footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: var(--background-white);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--dark-blue-hover);
+    font-size: 13px;
+    color: #aaa;
+}
