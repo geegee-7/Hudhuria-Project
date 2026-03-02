@@ -1,0 +1,96 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Techies Meetup",
+      "date": "APR 12 • 6:00 PM",
+      "venue": "Main Auditorium",
+      "price": "FREE",
+      "image": "./images-events-1.jpg",
+      "description": "Join us for an evening of networking, tech talks, and innovation."
+    },
+    {
+      "id": 2,
+      "title": "Culture Night",
+      "date": "APR 18 • 4:00 PM",
+      "venue": "Parking lot B",
+      "price": "sh.1,500",
+      "image": "./images-events-1.jpg",
+      "description": "Experience diverse cultural performances and traditions."
+    },
+    {
+      "id": 3,
+      "title": "Music Festival",
+      "date": "MAY 01 • 12:00 PM",
+      "venue": "City Park",
+      "price": "sh.2,500",
+      "image": "./images-events-1.jpg",
+      "description": "A day-long celebration of live music from diverse artists."
+    },
+    {
+      "id": 4,
+      "title": "Art Exhibition",
+      "date": "MAY 05 • 10:00 AM",
+      "venue": "Grand Gallery",
+      "price": "FREE",
+      "image": "./images-events-1.jpg",
+      "description": "Showcase of contemporary and traditional artwork."
+    }
+  ],
+  "organizers": [
+    {
+      "id": 1,
+      "name": "Tech Community",
+      "eventCount": 3,
+      "description": "A community dedicated to technology and innovation."
+    },
+    {
+      "id": 2,
+      "name": "Arts Society",
+      "eventCount": 1,
+      "description": "Promoting local and international art."
+    },
+    {
+      "id": 3,
+      "name": "Innovate Co.",
+      "eventCount": 5,
+      "description": "Innovation-focused organization hosting startup events."
+    },
+    {
+      "id": 4,
+      "name": "Music Makers",
+      "eventCount": 8,
+      "description": "Dedicated to promoting music and live performances."
+    }
+  ],
+  "venues": [
+    {
+      "id": 1,
+      "name": "Main Auditorium",
+      "capacity": 300,
+      "location": "Downtown",
+      "facilities": "Stage, Sound System, Parking"
+    },
+    {
+      "id": 2,
+      "name": "Parking lot B",
+      "capacity": 2000,
+      "location": "Central Park",
+      "facilities": "Open Field, Restrooms, Catering"
+    },
+    {
+      "id": 3,
+      "name": "City Park Amphitheater",
+      "capacity": 5000,
+      "location": "City Center",
+      "facilities": "Outdoor Stage, Lighting, Security"
+    },
+    {
+      "id": 4,
+      "name": "Grand Gallery Hall",
+      "capacity": 500,
+      "location": "Arts District",
+      "facilities": "Exhibition Space, Climate Control, WiFi"
+    }
+  ]
+}
